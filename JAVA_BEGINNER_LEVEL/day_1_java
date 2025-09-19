@@ -2,7 +2,8 @@
                                                 JAVA
                                         *********************
  
- package basic.Hello;
+1)
+package basic.Hello;
  public class HelloWorld {
     public static void main(String [] args)
       {
@@ -14,3 +15,19 @@ C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>javac -d . HelloWorld.jav
 
 C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>java basic.Hello.HelloWorld
 Hello World !!!!
+
+2)
+ package basic.AddOf2numByCmd;
+ public class AddOf2numByCmd {
+    public static void main(String [] cmd)
+      {
+         int x = Integer.parseInt(cmd[0]);
+         int y = Integer.parseInt(cmd[1]);
+         System.out.println("sum is :"+(x+y));
+      }
+ }
+output :
+C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>javac -d . AddOf2numByCmd.java
+
+C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>java basic.AddOf2numByCmd.AddOf2numByCmd 10 30
+sum is :40
