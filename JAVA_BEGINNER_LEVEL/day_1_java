@@ -2,3 +2,15 @@
                                                 JAVA
                                         *********************
  
+ package basic.Hello;
+ public class HelloWorld {
+    public static void main(String [] args)
+      {
+         System.out.println("Hello World !!!!");
+      }
+ }
+output : 
+C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>javac -d . HelloWorld.java
+
+C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>java basic.Hello.HelloWorld
+Hello World !!!!
