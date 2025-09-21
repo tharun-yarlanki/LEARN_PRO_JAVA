@@ -1,1 +1,81 @@
 
+In coding tests for top MNCs (like TCS, Infosys, Wipro, Accenture, Capgemini) and product-based companies (like Amazon, Microsoft, Google, Adobe, Oracle), the difficulty level depends on the company type:
+
+🔹 1. Service-based Companies (Infosys, TCS, Accenture, Wipro, etc.)
+
+They usually focus on basic programming and logic-building.
+Expect questions like:
+
+Reverse a string / number
+
+Check palindrome (string/number)
+
+Check prime number
+
+Fibonacci series
+
+Factorial of a number
+
+Armstrong number
+
+Count vowels/consonants in a string
+
+Find largest/smallest element in an array
+
+Sort an array (without using library functions)
+
+Find sum of digits of a number
+
+Swap two numbers without using a third variable
+
+👉 Here the focus is: loops, arrays, strings, simple math, basic conditions.
+
+🔹 2. Mid-level Product Companies (Adobe, Oracle, Cisco, etc.)
+
+They go one step higher. Expect:
+
+Searching & Sorting algorithms (binary search, bubble sort, selection sort)
+
+String problems (anagram check, remove duplicates, substring search)
+
+Matrix problems (transpose, rotate, diagonal sum)
+
+Recursion-based problems (factorial, Fibonacci, power of a number)
+
+Use of collections (HashMap, HashSet) to count frequencies, find duplicates
+
+Simple object-oriented concepts (class, inheritance, polymorphism, interfaces)
+
+Basic pattern printing (stars, pyramids, number patterns)
+
+👉 Here the focus is: data structures + OOP basics.
+
+🔹 3. Top Product Companies (Amazon, Microsoft, Google, etc.)
+
+Here, tests are DSA-heavy:
+
+Arrays (subarray sum, max/min subarray, two-sum problem)
+
+Strings (longest palindrome substring, substring matching, reversing words)
+
+Linked List (reverse, detect cycle, merge two sorted lists)
+
+Stack/Queue problems (balanced parentheses, next greater element)
+
+Recursion + Backtracking (N-Queens, subsets, permutations)
+
+Dynamic Programming (Fibonacci, coin change, longest common subsequence)
+
+Tree problems (inorder traversal, height of tree, lowest common ancestor)
+
+Graph problems (DFS, BFS, shortest path)
+
+👉 Here the focus is: algorithms, problem-solving, optimization.
+
+✅ Summary
+
+Service-based → Basic programs (loops, arrays, strings).
+
+Mid-level → Some DS + OOP + collections.
+
+Top product → Full DSA (Data Structures & Algorithms).
