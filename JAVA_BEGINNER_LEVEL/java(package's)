@@ -60,6 +60,30 @@ vegetablePuffs :75
 discount :50
 final bill :265
 =====================================================================================================================
+4)
+// Write a program in Java to display the following pattern on the screen without using loop.
+// @@@@@@@@
+// @      @
+// @      @
+// @      @
+// @      @
+// @      @
+// @@@@@@@@
+package basic.Patterns;
+public class Patterns{
+    public static void main(String [] args)
+    {
+       System.out.println("@@@@@@@@");
+       System.out.println("@      @");
+       System.out.println("@      @");
+       System.out.println("@      @");
+       System.out.println("@      @");
+       System.out.println("@      @");
+       System.out.println("@@@@@@@@");
+    }
+}
+output : 
+
 =====================================================================================================================
 =====================================================================================================================
 =====================================================================================================================
