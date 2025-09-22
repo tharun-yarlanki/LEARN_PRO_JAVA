@@ -15,7 +15,7 @@ C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>javac -d . HelloWorld.jav
 
 C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>java basic.Hello.HelloWorld
 Hello World !!!!
-
+=====================================================================================================================
 2)
  package basic.AddOf2numByCmd;
  public class AddOf2numByCmd {
@@ -31,3 +31,34 @@ C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>javac -d . AddOf2numByCmd
 
 C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>java basic.AddOf2numByCmd.AddOf2numByCmd 10 30
 sum is :40
+=====================================================================================================================
+3)
+package basic.BillGenerate;
+public class BillGenerate
+{
+    public static void main(String [] args)
+    {   
+        int chickenRoll = Integer.parseInt(args[0]) ;
+        int vegetablePuffs = Integer.parseInt(args[1]) ;
+        int discount = Integer.parseInt(args[2]);
+    
+        System.out.println("chickenRoll :" +(chickenRoll*4) );
+        System.out.println("vegetablePuffs :"+ (vegetablePuffs*3));
+        System.out.println("discount :"+(discount));
+        System.out.println("final bill :" + ((chickenRoll*4)+(vegetablePuffs*3)-(discount)));
+    }
+}
+output : 
+C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>javac -d . BillGenerate.java
+
+C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>java basic.BillGenerate.BillGenerate 60 25 50
+chickenRoll :240
+vegetablePuffs :75
+discount :50
+final bill :265
+=====================================================================================================================
+=====================================================================================================================
+=====================================================================================================================
+=====================================================================================================================
+=====================================================================================================================
+=====================================================================================================================
