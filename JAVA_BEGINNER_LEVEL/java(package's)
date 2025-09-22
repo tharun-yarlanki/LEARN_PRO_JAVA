@@ -95,6 +95,33 @@ C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>java basic.Patterns.Patte
 @@@@@@@@
 
 =====================================================================================================================
+5)
+// Write a program to input the basic salary of a person. He gets 15% of the basic as HRA,
+// 15% of the basic as Conveyance allowance and 10% of the basic as Entertainment allowance. 
+// The total salary is calculated by adding Basic + HRA + Conveyance + Entertainment Allowance.
+// Calculate and print the total salary of person.
+// Take the Basic Salary from Command Line Argument
+
+package basic.SalaryCal;
+public class SalaryCal 
+{
+ public static void main(String [] args)
+ {
+   int basic = Integer.parseInt(args[0]);
+   int HRA = Integer.parseInt(args[1]);
+   int conveyance = Integer.parseInt(args[2]);
+   int entertainmentAllowance = Integer.parseInt(args[3]);
+
+   System.out.println((basic + HRA + conveyance + entertainmentAllowance) +"% total salary");
+
+ }
+}
+
+output :
+C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>javac -d . SalaryCal.java
+
+C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>java basic.SalaryCal.SalaryCal 15 15 10 10
+50% total salary
 =====================================================================================================================
 =====================================================================================================================
 =====================================================================================================================
