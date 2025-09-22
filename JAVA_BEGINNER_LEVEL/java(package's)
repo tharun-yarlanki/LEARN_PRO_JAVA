@@ -33,6 +33,9 @@ C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>java basic.AddOf2numByCmd
 sum is :40
 =====================================================================================================================
 3)
+Write a  program in Java that will generate and print the bill at Dominos for four chicken rolls (@ Rs 60 per chicken rolls) and three vegetable puffs (@ Rs 25 per vegetable puffs). 
+There is a special discount of Rs 50 on the final bill amount. Calculate and print final bill as well as all item bill.
+
 package basic.BillGenerate;
 public class BillGenerate
 {
