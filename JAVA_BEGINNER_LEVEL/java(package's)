@@ -123,6 +123,25 @@ C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>javac -d . SalaryCal.java
 C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>java basic.SalaryCal.SalaryCal 15 15 10 10
 50% total salary
 =====================================================================================================================
+6)
+// Write a program in java to Fahrenheit to Celsius Program
+// Formula is :-  celsius=((fahrenheit-32)*5)/9;
+
+package basic.Fahrenheit;
+public class Fahrenheit
+{
+    public static void main(String [] args)
+    {
+        int fahrenheit = Integer.parseInt(args[0]);
+        System.out.println("celsius=" + ((((fahrenheit-32)*5)/9)));
+    }
+}
+
+output : 
+C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>javac -d . Fahrenheit.java
+
+C:\Users\hp\OneDrive\Desktop\all codes\java\19-09-2025>java basic.Fahrenheit.Fahrenheit 10
+celsius=-12
 =====================================================================================================================
 =====================================================================================================================
 =====================================================================================================================
