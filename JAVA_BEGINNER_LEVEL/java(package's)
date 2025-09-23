@@ -181,4 +181,32 @@ C:\Users\hp\OneDrive\Desktop\all codes\java\19,22>java basic.Palindrome.Palindro
 121 is a palindrome
 
 =====================================================================================================================
+8)
+// A shopkeeper buys a TV set for Rs. 32,500 and sells it at a profit of 27%.
+//  Apart from this a GST of 5% is charged. Display total selling price, profit along with GST charge.
+package basic.BuysTv;
+public class BuysTv 
+{
+    public static void main(String [] args)
+    {
+        int tvPrice = Integer.parseInt(args [0]); 
+        double profit = Double.parseDouble(args [1]); // 27% -- 0.27
+        double gst = Double.parseDouble(args [2]); // 5% -- 0.05
+        double totalSellingPrice = (tvPrice + (tvPrice*profit) + (gst)) ;
+        
+
+        System.out.println(totalSellingPrice + "it is total selling price of TV");
+    }
+}
+output :
+C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>javac -d . BuysTv.java
+
+C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>java basic.BuysTv.BuysTv 32500 0.27 0.05
+41275.05it is total selling price of TV
+=====================================================================================================================
+=====================================================================================================================
+=====================================================================================================================
+=====================================================================================================================
+=====================================================================================================================
+=====================================================================================================================
 =====================================================================================================================
