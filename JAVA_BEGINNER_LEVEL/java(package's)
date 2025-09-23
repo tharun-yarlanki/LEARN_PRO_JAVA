@@ -204,6 +204,29 @@ C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>javac -d . SellingTv.java
 C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>java basic.SellingTv.SellingTv 32500 0.27 0.05
 41275.05it is total selling price of TV
 =====================================================================================================================
+9)
+// Rohan purchased an old cycle for Rs. 1200 and spend Rs. 250 on repairs, 
+// Rs. 350 in coloring and added new accessories worth Rs. 500. 
+// Rohan wants to make a profit of Rs. 1500 on selling the cycle. Find the selling price of the cycle.
+//  Write a java program to store all values and calculate and display the selling price.
+package basic.SellingCycle ;
+public class SellingCycle 
+{
+    public static void main(String [] args)
+    {
+        int oldCycle = Integer.parseInt(args [0]); // 1200
+        int repairs = Integer.parseInt(args [1]); // 250
+        int coloring = Integer.parseInt(args [2]); // 350
+        int accessories = Integer.parseInt(args [3]); // 500
+        int profitaWant = Integer.parseInt(args [4]); // 1500
+        int sellingPrice = (oldCycle + repairs + coloring + accessories + profitaWant) ;
+
+        System.out.println(sellingPrice + " this is final selling price") ;
+
+    }
+}
+output :
+
 =====================================================================================================================
 =====================================================================================================================
 =====================================================================================================================
