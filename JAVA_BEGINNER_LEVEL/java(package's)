@@ -226,6 +226,10 @@ public class SellingCycle
     }
 }
 output :
+C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>javac -d . SellingCycle.java
+
+C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>java basic.SellingCycle.SellingCycle 1200 250 350 500 1500
+3800 this is final selling price
 
 =====================================================================================================================
 =====================================================================================================================
