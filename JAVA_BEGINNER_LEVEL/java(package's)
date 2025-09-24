@@ -247,6 +247,12 @@ public class StringToDouble
         System.out.println(multi +" is multiplication of 2 numbers");
     }
 }
+
+output :
+C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>javac -d . StringToDouble.java
+
+C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>java basic.StringToDouble.StringToDouble 12.5 3.2
+40.0 is multiplication of 2 numbers
 =====================================================================================================================
 =====================================================================================================================
 =====================================================================================================================
