@@ -254,6 +254,26 @@ C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>javac -d . StringToDouble.j
 C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>java basic.StringToDouble.StringToDouble 12.5 3.2
 40.0 is multiplication of 2 numbers
 =====================================================================================================================
+11)
+// Program to find sum of the number from Command Line Argument.
+
+// java SumOfNumbers 10 20 30 40
+package basic.SumOfFourNum;
+public class SumOfFourNum
+{
+    public static void main(String [] args)
+    {
+        int num1 = Integer.parseInt(args[0]);
+        int num2 = Integer.parseInt(args[0]);
+        int num3 = Integer.parseInt(args[0]);
+        int num4 = Integer.parseInt(args[0]);
+        int sum  = num1 + num2 + num3 + num4;
+        System.out.println(sum +" is the sum of 4 numbers ");
+
+    }
+}
+output :
+
 =====================================================================================================================
 =====================================================================================================================
 =====================================================================================================================
