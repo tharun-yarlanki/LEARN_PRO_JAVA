@@ -232,6 +232,21 @@ C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>java basic.SellingCycle.Sel
 3800 this is final selling price
 
 =====================================================================================================================
+10)
+// Write a java program to covert string to double using parseDouble() and
+//  multiply two decimal Numbers and 
+//  display the result by taking input from the command line argument?
+package basic.StringToDouble;
+public class StringToDouble 
+{
+    public static void main(String [] args)
+    {
+        double num1 = Double.parseDouble(args[0]);
+        double num2 = Double.parseDouble(args[1]);
+        double multi = num1 * num2;
+        System.out.println(multi +" is multiplication of 2 numbers");
+    }
+}
 =====================================================================================================================
 =====================================================================================================================
 =====================================================================================================================
