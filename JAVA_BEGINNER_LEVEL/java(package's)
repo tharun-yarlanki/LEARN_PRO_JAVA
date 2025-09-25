@@ -280,6 +280,25 @@ C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>java basic.SumOfFourNum.Sum
 
 
 =====================================================================================================================
+12)
+// Write a java program to calculate the curved surface area of a cube?
+// Formula = 4*side Square.
+// Write a java program to calculate the total surface area of a cube?
+// Formula = 6*side Square.
+package basic.CurvedSurfaceOfCube;
+public class CurvedSurfaceOfCube
+{
+    public static void main(String [] args)
+    {
+      int side = Integer.parseInt(args[0]);
+      int cube = 4*side*side;
+      System.out.println(cube + " this is curved surface area of a cube");
+
+      int Side = Integer.parseInt(args[1]);
+      int Cube = 6*side*side;
+      System.out.println(Cube + " this is total surface area of a cube");
+    }
+}
 =====================================================================================================================
 =====================================================================================================================
 =====================================================================================================================
