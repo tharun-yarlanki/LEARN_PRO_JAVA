@@ -327,5 +327,10 @@ public class SurfaceAreaOfCylinder
 
 output :
 
+C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>javac -d . SurfaceAreaOfCylinder.java
+
+C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>java basic.SurfaceAreaOfCylinder.SurfaceAreaOfCylinder 7 10
+747.32007it is total surface area of a cylinder
+
 =====================================================================================================================
 =====================================================================================================================
