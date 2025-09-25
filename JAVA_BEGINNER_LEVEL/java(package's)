@@ -308,5 +308,24 @@ C:\Users\hp\OneDrive\Desktop\all codes\java\19,22,23>java basic.CurvedSurfaceOfC
 100 this is curved surface area of a cube
 150 this is total surface area of a cube
 =====================================================================================================================
+13)
+// Write a java program to calculate the total surface area of a cylinder? 
+// Formula = 2 pi square r * 2 pi r h (take the pi as 3.14 with final modifier).
+package basic.SurfaceAreaOfCylinder;
+public class SurfaceAreaOfCylinder
+{
+    public static void main(String [] args)
+    {
+        int radius = Integer.parseInt(args [0]);
+        int height = Integer.parseInt(args [1]);
+        float pi = 3.14f;
+        float surfaceAreaOfCylinder = (2*pi*radius*(radius+height));
+
+        System.out.println(surfaceAreaOfCylinder + "it is total surface area of a cylinder");
+    }
+}
+
+output :
+
 =====================================================================================================================
 =====================================================================================================================
