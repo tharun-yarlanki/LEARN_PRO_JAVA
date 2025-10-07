@@ -24,3 +24,26 @@ public class Calculator {
 }
 ========================================================================================
 
+package ELC;
+
+import BLC.Calculator;
+public class ArithmaticOperations {
+
+	public static void main(String[] args) {
+		
+		int a = 10;
+		int b = 3;
+	    int result =Calculator.add(a,b);
+	    int result1 =Calculator.sub(a, b);
+	    int result2 = Calculator.mul(a, b);
+	    double result3 = Calculator.div(a, b);
+	    System.out.println(result);
+	    System.out.println(result1);
+	    System.out.println(result2);
+	    System.out.println(result3);
+
+
+	}
+}
+===========================================================================================
+
