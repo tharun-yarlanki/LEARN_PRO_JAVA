@@ -1,1 +1,12 @@
+package BLC;
+
+public class Student {
+
+	public static String getStudentDetails(String name,int fee,int roll)
+	{  
+		return "[ Roll is :"+roll+", Name is :"+name+", Fees is :"+fee+"]";
+		
+	}
+}
+=============================================================================================
 
