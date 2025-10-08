@@ -9,4 +9,18 @@ public class Student {
 	}
 }
 =============================================================================================
+package ELC;
+import BLC.Student;
+
+public class TestStudentDetails {
+	
+	public static void main(String[] args) {
+		
+		String details = Student.getStudentDetails("tharun", 30000, 27);
+	System.out.println(details);
+	}
+	
+
+}
+=============================================================================================
 
