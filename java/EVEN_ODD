@@ -13,3 +13,24 @@ public class EvenOrOdd  {
 	}
 }
 ===============================================================================================
+package ELC;
+
+import BLC.EvenOrOdd;
+
+public class TestEvenOrOdd {
+	
+	public static void main(String[] args) {
+		
+		int x = 10;
+		boolean result = EvenOrOdd.isEven(x);
+		
+		if(result== true) {
+			System.out.println("Even");
+			
+		}else {
+		System.out.println("odd");
+		}
+	}
+
+}
+================================================================================================
