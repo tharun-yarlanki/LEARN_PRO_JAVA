@@ -1,5 +1,5 @@
 // BLC
-package DogDetails;
+1) package DogDetails;
 
 public class GetDogInfo {
 	String name ;
@@ -35,4 +35,8 @@ public class Dog {
 ===================================================================
 OUTPUT :
 ======
-
+Dog name :puppy
+Dog height :7.3
+Dog age :5
+Bark
+====================================================================
