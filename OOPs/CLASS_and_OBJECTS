@@ -1,1 +1,38 @@
+// BLC
+package DogDetails;
+
+public class GetDogInfo {
+	String name ;
+	double height ;
+	int age ;
+	
+	public  void getDogInformation() {
+		System.out.println("Dog name :"+name);
+		System.out.println("Dog height :"+height);
+		System.out.println("Dog age :"+age);
+
+	}
+	
+	public  void bark(){
+		
+	System.out.println("Bark"); 
+	}
+}
+====================================================================
+// ELC
+package DogDetails;
+
+public class Dog {
+	public static void main(String[] args) {
+		GetDogInfo dog =new GetDogInfo();
+		dog.name="puppy";
+		dog.height=7.3;
+		dog.age=5;
+		dog.getDogInformation();
+		dog.bark();
+	}
+}
+===================================================================
+OUTPUT :
+======
 
