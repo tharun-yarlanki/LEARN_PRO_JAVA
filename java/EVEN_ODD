@@ -24,12 +24,6 @@ public class TestEvenOrOdd {
 		int x = 10;
 		boolean result = EvenOrOdd.isEven(x);
 		
-		if(result== true) {
-			System.out.println("Even");
-			
-		}else {
-		System.out.println("odd");
-		}
 	}
 
 }
