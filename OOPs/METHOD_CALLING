@@ -37,6 +37,11 @@ public static void main(String[] args) {
 ===================================================================================================================
 OUTPUT:
 ======
+enter customer id : 101
+enter customer name : tharun
+enter customer bill : 5000
+[ Id is : 101, Name is :tharun, Bill is :5000.0]
+===================================================================================================================
 
 
 1️⃣ Method Definition
