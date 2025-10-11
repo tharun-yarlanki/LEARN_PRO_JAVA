@@ -1,1 +1,54 @@
+1️⃣ Method Definition
 
+In Customer.java
+
+public static String getCustomerDetails(int Costid, String Costname, double Costbill)
+
+
+Here,
+Costid, Costname, and Costbill are parameters (sometimes called formal parameters).
+They are placeholders — variables that will receive values when the method is called.
+
+2️⃣ Method Call
+
+In Test.java
+
+String Details = Customer.getCustomerDetails(id, name, bill);
+
+
+Here,
+id, name, and bill are arguments (sometimes called actual parameters).
+These are the real values you input from the keyboard using the Scanner.
+
+💡 How Java connects them
+
+When you call:
+
+Customer.getCustomerDetails(id, name, bill);
+
+
+👉 Java copies the values of your arguments (id, name, bill)
+into the method’s parameters (Costid, Costname, Costbill).
+
+So it’s like doing this behind the scenes:
+
+In Test.java	In Customer.java (after method call)
+id = 101	Costid = 101
+name = "Arjun"	Costname = "Arjun"
+bill = 5000.75	Costbill = 5000.75
+
+After copying, the method uses its own parameter variables (Costid, Costname, Costbill) inside the method body — they hold the same data, but they’re separate variables.
+
+📦 Analogy
+
+Think of it like passing copies of data:
+
+You (the caller) fill out a form (id, name, bill) and give it to the Customer method.
+The method receives its own copy of those values (Costid, Costname, Costbill) to work with.
+Changing one doesn’t affect the other.
+
+🧠 Summary
+Term	Example	Meaning
+Parameter	Costid, Costname, Costbill	Variable names inside the method definition
+Argument	id, name, bill	Real values you pass when calling the method
+What happens	Values from arguments are copied into parameters	Data flow direction: → Method
