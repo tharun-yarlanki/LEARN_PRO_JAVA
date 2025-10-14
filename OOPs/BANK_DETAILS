@@ -1,1 +1,69 @@
+package BLC;
+
+public class Bank {
+    private String customerName;
+    private int accountNumber;
+    private double currentBalance;
+
+    public static String bankName = "ICICI Bank";
+    public static String bankAddress = "Ameerpet";
+    public static String bankIFSCCode = "ICICI006";
+
+    // Set customer details
+    public void setCustomerDetails(String name, int accNumber, double balance) {
+        if (balance <= 0) {
+            System.out.println("Error: Opening balance must be greater than 0!");
+            System.exit(0);
+        } else {
+            customerName = name;
+            accountNumber = accNumber;
+            currentBalance = balance;
+        }
+    }
+
+    // Deposit method
+    public void deposit(double amount) {
+        if (amount <= 0) {
+            System.out.println("Deposit amount must be greater than zero!");
+            return;
+        }
+        currentBalance += amount;
+        System.out.println("Deposited: " + amount);
+        System.out.println("New Balance: " + currentBalance);
+    }
+
+    // Withdraw method
+    public void withdraw(double amount) {
+        if (amount <= 0) {
+            System.out.println("Withdrawal amount must be greater than 0.");
+            return;
+        }
+
+        if (amount > currentBalance) {
+            System.out.println("Insufficient balance!");
+        } else {
+            currentBalance -= amount;
+            System.out.println("Withdrawal successful!");
+            System.out.println("Remaining balance: " + currentBalance);
+        }
+    }
+
+    // Get current balance
+    public double getCurrentBalance() {
+        return currentBalance;
+    }
+
+    // Display customer details
+    public String displayDetails() {
+        return "===== Customer Details =====\n"
+                + "Name: " + customerName + "\n"
+                + "Account Number: " + accountNumber + "\n"
+                + "Balance: " + currentBalance + "\n"
+                + "Bank Name: " + bankName + "\n"
+                + "Branch: " + bankAddress + "\n"
+                + "IFSC Code: " + bankIFSCCode;
+    }
+}
+==============================================================================================
+==============================================================================================
 
