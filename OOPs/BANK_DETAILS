@@ -138,5 +138,71 @@ public class BankCustomer {
 ===============================================================================================================================================
 OUTPUT :
 ======
+===== Welcome to ICICI Bank =====
+Enter Customer Name: tharun
+Enter Account Number: 123456
+Enter Opening Balance: 5000
+Customer account created successfully!
+
+===== MENU =====
+1. Deposit
+2. Withdraw
+3. Check Balance
+4. Display Customer Details
+5. Exit
+Enter your choice: 1
+
+Enter deposit amount: 5000
+Deposited: 5000.0
+New Balance: 10000.0
+
+===== MENU =====
+1. Deposit
+2. Withdraw
+3. Check Balance
+4. Display Customer Details
+5. Exit
+Enter your choice: 2
+
+Enter withdraw amount: 1000
+Withdrawal successful!
+Remaining balance: 9000.0
+
+===== MENU =====
+1. Deposit
+2. Withdraw
+3. Check Balance
+4. Display Customer Details
+5. Exit
+Enter your choice: 3
+
+Your current balance is: 9000.0
+
+===== MENU =====
+1. Deposit
+2. Withdraw
+3. Check Balance
+4. Display Customer Details
+5. Exit
+Enter your choice: 4
+
+===== Customer Details =====
+Name: tharun
+Account Number: 123456
+Balance: 9000.0
+Bank Name: ICICI Bank
+Branch: Ameerpet
+IFSC Code: ICICI006
+
+===== MENU =====
+1. Deposit
+2. Withdraw
+3. Check Balance
+4. Display Customer Details
+5. Exit
+Enter your choice: 5
+
+Thank you for visiting ICICI Bank! Have a great day!
+
 
 
