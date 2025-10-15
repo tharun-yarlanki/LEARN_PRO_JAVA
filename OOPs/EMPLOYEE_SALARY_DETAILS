@@ -39,4 +39,33 @@ public class Employee {
 }
 ====================================================================================================================================
 ====================================================================================================================================
+package ELC;
+import BLC.Employee;
+import java.util.Scanner;
+public class TestEmployeeDemo {
+public static void main(String[] args) {
+	Employee sal = new Employee();
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter Employee ID: ");
+	int id = sc.nextInt();
+	sc.nextLine();
+	System.out.println("Enter Employee Name: ");
+	String name = sc.nextLine();
+	
+	System.out.println("Enter Employee salary: ");
+	double salary = sc.nextDouble();
+	
+    
+	sal.setEmployeeDetails(id, name, salary);
+	System.out.println("----- Employee Information -----");
+	System.out.println("Employee Details:");
+	System.out.println(sal.toString());
+	System.out.println("----- Salary Increment Details -----");
+	sal.calculateSalaryIncrement();
+}
+}
+=========================================================================================================================================
+=========================================================================================================================================
+OUTPUT :
+======
 
