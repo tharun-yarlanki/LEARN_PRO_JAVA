@@ -68,4 +68,16 @@ public static void main(String[] args) {
 =========================================================================================================================================
 OUTPUT :
 ======
+Enter Employee ID: 
+27
+Enter Employee Name: 
+t
+Enter Employee salary: 
+80000
+----- Employee Information -----
+Employee Details:
+Employee [id=27, name=t, salary=80000.0]
+----- Salary Increment Details -----
+increment salary = 5600.00current sarlary + increment salary = 85600.0
+
 
