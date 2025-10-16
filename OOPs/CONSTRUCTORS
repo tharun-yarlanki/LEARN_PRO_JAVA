@@ -1,1 +1,18 @@
+package ELC;
+import BLC.Car;
+import java.util.Scanner;
+public class TestCar {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter Car Model : ");
+	String carName = sc.nextLine();
+	System.out.println("Enter Car Manufacturing year : ");
+	int carYear = sc.nextInt();
+	System.out.println("Enter Car Price : ");
+	double carPrice = sc.nextDouble();
+	Car car = new Car(carName,carYear,carPrice);
+	System.out.println(car.toString());
+	
+}
+}
 
