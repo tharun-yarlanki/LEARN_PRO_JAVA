@@ -75,6 +75,15 @@ Enter Car Price :
 500000
 year must be greater than 2010
 ===================================================================================================================
+Enter Car Model : 
+toyato
+Enter Car Manufacturing year : 
+2001
+Enter Car Price : 
+-1000000
+year must be greater than 2010
+Price must be positive integer
+===================================================================================================================
 
 
 
