@@ -193,6 +193,47 @@ public class Book {
 }
 
 ===================================================================================================================
+package ELC;
+
+import java.util.Scanner;
+import BLC.Book;
+
+public class Test {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // --- Input details ---
+        System.out.print("Enter book title: ");
+        String title = sc.nextLine();
+
+        System.out.print("Enter author name: ");
+        String author = sc.nextLine();
+
+        System.out.print("Enter book price: ");
+        double price = sc.nextDouble();
+
+        // Create Book object
+        Book book = new Book(title, author, price);
+
+        // --- Validate price ---
+        if (price < 0) {
+            System.out.println("Error : Book Price cannot be negative.");
+        }
+
+        // --- Input discount ---
+        System.out.print("Enter discount percentage: ");
+        double discount = sc.nextDouble();
+
+        // Apply discount
+        book.applyDiscount(discount);
+
+        // --- Display Book details ---
+        System.out.println(book);
+
+        sc.close();
+    }
+}
+
 ===================================================================================================================
 ===================================================================================================================
 ===================================================================================================================
