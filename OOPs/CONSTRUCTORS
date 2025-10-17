@@ -130,6 +130,29 @@ public class Employee {
 }
 
 ===================================================================================================================
+package ELC;
+import BLC.Employee;
+import java.util.Scanner;
+public class TestEmployee {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("firstName:");
+	String fn = sc.nextLine();
+	System.out.println("lastName:");
+	String ln = sc.nextLine();
+	System.out.println("employeeId:");
+	int emID = sc.nextInt();
+	System.out.println("salary:");
+	double sal = sc.nextDouble();
+	System.out.println("NoOfProject:");
+	int nOp = sc.nextInt();
+
+	Employee em = new Employee(fn,ln,emID,sal,nOp);
+	System.out.println(em.toString());
+	em.calculateSalary();
+}
+}
+
 ===================================================================================================================
 ===================================================================================================================
 ===================================================================================================================
