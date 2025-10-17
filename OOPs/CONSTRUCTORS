@@ -155,6 +155,43 @@ public static void main(String[] args) {
 
 ===================================================================================================================
 ===================================================================================================================
+package BLC;
+
+public class Book {
+    // Private fields
+    private String title;
+    private String author;
+    private double price;
+
+    // Parameterized Constructor
+    public Book(String title, String author, double price) {
+        this.title = title;
+        this.author = author;
+        this.price = price;
+    }
+
+    // Method to apply discount
+    public void applyDiscount(double discountPercentage) {
+        if (discountPercentage < 0) {
+            System.out.println("Error: Invalid discount percentage.");
+        } else {
+            double discountAmount = price * (discountPercentage / 100);
+            price = price - discountAmount;
+        }
+    }
+
+    // toString method to display book details
+    @Override
+    public String toString() {
+        return "Title: " + title + "\nAuthor: " + author + "\nPrice: " + price;
+    }
+
+    // Getter for price (optional if needed)
+    public double getPrice() {
+        return price;
+    }
+}
+
 ===================================================================================================================
 ===================================================================================================================
 ===================================================================================================================
