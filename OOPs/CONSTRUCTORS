@@ -84,6 +84,51 @@ Enter Car Price :
 year must be greater than 2010
 Price must be positive integer
 ===================================================================================================================
+package BLC;
+
+public class Employee {
+	private String firstName;   
+	private String lastName; 
+	private int employeeId; 
+	private double salary;  
+	private int NoOfProject; 
+	
+	public Employee(String firstName,String lastName,int employeeId,double salary,int NoOfProject) {
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.employeeId=employeeId;
+		this.salary=salary;
+		this.NoOfProject=NoOfProject;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [firstName=" + firstName + ", lastName=" + lastName + ", employeeId=" + employeeId
+				+ ", salary=" + salary + ", NoOfProject=" + NoOfProject + "]";
+	}
+	
+	public void calculateSalary() {
+		if(NoOfProject >5 && NoOfProject<10) {
+			salary = NoOfProject+5000;
+		}else if(NoOfProject>=10 && NoOfProject<20) {
+			salary = salary+10000;
+		}else if(NoOfProject<0){
+			System.out.println("Number of projects cannot be negative");
+			System.out.println("Salary remains "+salary);
+			System.exit(0);
+		}
+		else if(NoOfProject<5 && NoOfProject>0){
+			salary = salary+0;
+			System.out.println("Salary remains "+salary);
+			System.exit(0);
+		}	
+		 else {
+			salary = salary+15000;
+		}
+		System.out.println(" updated salary: "+salary);
+	}
+}
+
 ===================================================================================================================
 ===================================================================================================================
 ===================================================================================================================
