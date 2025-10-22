@@ -24,3 +24,30 @@ public class Student {
 }
 
 ============================================================================================================================
+package ELC;
+import BLC.Student;
+import java.util.Scanner;
+public class TestStudent {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	while(true) {
+		System.out.println("enter student name : ");
+		String name = sc.nextLine();
+		System.out.println("enter student age : ");
+		int age = sc.nextInt();
+		sc.nextLine();
+		System.out.println("enter student grade : ");
+		String grade = sc.nextLine();
+		
+		Student st = Student.createStudentObject(name, age, grade);
+		System.out.println(st);
+		
+		System.out.println("you want to continue the process of student details say yes or no");
+		String say = sc.nextLine();
+		if(say.equalsIgnoreCase("no")) {
+			break;
+		}
+	}
+}
+}
+========================================================================================================================
