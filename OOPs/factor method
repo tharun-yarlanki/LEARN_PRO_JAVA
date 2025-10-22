@@ -53,3 +53,13 @@ public static void main(String[] args) {
 ===========================================================================================================================
 OUTPUT :
 ======
+enter student name : 
+tharun
+enter student age : 
+23
+enter student grade : 
+a
+Student [name=tharun, age=23, grade=a]
+you want to continue the process of student details say yes or no
+no
+==========================================================================================================================
