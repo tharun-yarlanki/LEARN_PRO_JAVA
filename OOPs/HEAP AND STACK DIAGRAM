@@ -49,11 +49,102 @@ public class CustomerDemo
 	}
 }  
 ==========================================================================================
-HEAP:
-=====
+Step 1: main() starts
+
+Stack:
+
+main()
+  val = 100
+
+
+Heap:
+
+Nothing yet.
+
+Step 2: Customer c = new Customer("Ravi", 2);
+
+Heap:
+
+Object	Fields
+Customer#1	name = "Ravi", id = 2
+
+Stack:
+
+main()
+  val = 100
+  c → Customer#1
+
+Step 3: Call m1(c)
+
+A new stack frame is created for m1().
+
+Stack:
+
+main()
+  val = 100
+  c → Customer#1
+m1()
+  cust → Customer#1  // passed by reference
+
+Step 4: Inside m1
+
+cust.setId(5);
+→ modifies the same object Customer#1.
+
+Customer#1 now has:
+
+name = "Ravi"
+id = 5
+
+
+cust = new Customer("Rahul",7);
+→ creates a new Customer object on heap.
+
+Heap now:
+
+Object	Fields
+Customer#1	name="Ravi", id=5
+Customer#2	name="Rahul", id=7
+
+Now cust points to Customer#2, but main’s variable c still points to Customer#1.
+
+cust.setId(9);
+→ modifies Customer#2 to id = 9.
+
+System.out.println(cust.getId());
+→ prints 9.
+
+Step 5: m1 ends
+
+Local variable cust (which was pointing to Customer#2) is removed from stack.
+
+Now only main.c → Customer#1 remains.
+
+✅ Customer#2 has no reference → becomes eligible for GC.
+
+Step 6: Back to main()
+
+System.out.println(c.getId()); → prints 5.
+
+🧾 Output:
+9
+5
 ==========================================================================================
-STACK:
+Stack:
+======
+
+main()
+  val = 100
+  c → Customer#1
+
+
+Heap:
 =====
+
+Customer#1: { name="Ravi", id=5 }
+Customer#2: { name="Rahul", id=9 }   ← GC eligible
+
+
 ==========================================================================================
 public class Employee
 {
