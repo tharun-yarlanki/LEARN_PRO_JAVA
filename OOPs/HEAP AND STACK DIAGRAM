@@ -190,3 +190,97 @@ public class Employee
 		 e2.id = temp;
 	  }
    }
+==================================================================================================
+Step 1: main()
+val = 200
+
+Step 2: Employee e1 = new Employee();
+
+Heap:
+
+Object	id
+Employee#1	100
+
+Then e1.id = val; → id = 200
+
+Employee#1: id = 200
+
+Step 3: update(e1);
+
+Stack:
+
+main()
+  val = 200
+  e1 → Employee#1
+update()
+  e → Employee#1
+
+
+Inside update():
+
+e.id = 500; → changes Employee#1.id = 500
+
+e = new Employee(); → new object created (Employee#2)
+
+e.id = 400; → Employee#2.id = 400
+
+print 400
+
+Then update() ends → local e dies → Employee#2 has no reference → eligible for GC
+
+Back to main(), e1 → Employee#1(id=500)
+
+Step 4: System.out.println(e1.id); → prints 500.
+Step 5: Employee e2 = new Employee(); e2.id = 900;
+
+Creates Employee#3 on heap.
+
+Now:
+
+Reference	Object
+e1	Employee#1(id=500)
+e2	Employee#3(id=900)
+Step 6: switchEmployees(e2,e1)
+
+Stack during call:
+
+main()
+  e1 → Employee#1
+  e2 → Employee#3
+switchEmployees()
+  e1 → Employee#3
+  e2 → Employee#1
+
+
+Inside switchEmployees():
+
+temp = e1.id; → temp = 900
+
+e1.id = e2.id; → Employee#3.id = 500
+
+e2 = new Employee(); → creates Employee#4
+
+e2.id = temp; → Employee#4.id = 900
+
+Now:
+
+Local e2 points to Employee#4
+
+But main’s e1 and e2 still point to Employee#1 and Employee#3 respectively.
+
+switchEmployees() ends → local e2 gone → Employee#4 becomes GC eligible.
+
+Step 7: Print:
+System.out.println(e1.id); → 500
+System.out.println(e2.id); → 500
+
+
+✅ because Employee#1.id = 500, Employee#3.id = 500
+
+🧾 Output:
+400
+500
+500
+500
+=====================================================================================================
+
