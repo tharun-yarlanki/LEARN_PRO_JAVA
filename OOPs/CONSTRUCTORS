@@ -7,7 +7,7 @@ public class Car {
 	
 	public Car(String model,int year ,double price) {
 	 this.model = model;
-//  this.year = year; 
+//  this.year = year;  
 //	 this.price = price; 
 	 
 	 if(year<2010) {
