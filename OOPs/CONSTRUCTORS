@@ -236,6 +236,111 @@ public class Test {
 
 ===================================================================================================================
 ===================================================================================================================
+import java.util.Scanner;
+
+public class Student{
+public static void main(String [] args){
+Scanner sc = new Scanner(System.in);
+System.out.println("enter student details");
+System.out.println("enter student name");
+String name = sc.nextLine();
+System.out.println("enter student Attendance");
+double sAtt = sc.nextDouble();
+System.out.println("enter student Exam Marks");
+double eMarks = sc.nextDouble();
+System.out.println("enter student Lab Performance");
+double  sLabPer = sc.nextDouble();
+System.out.println("enter student Daily Task");
+double  sDailyTask = sc.nextDouble();
+StudentLogic st = new StudentLogic(name,sAtt,eMarks,sLabPer,sDailyTask);
+st.overallPercentage();
+st.grade();
+st.eligible();
+System.out.println(st.toString());
+
+}
+}
+
+class StudentLogic{
+private String studentName;
+private double studentAttendence;
+private double studentExamMarks;
+private double studentLabPerformance;
+private double studentDailyTask;
+
+StudentLogic(String studentName,double studentAttendence,double studentExamMarks,double studentLabPerformance,double studentDailyTask){
+this.studentName = studentName;
+this.studentAttendence = studentAttendence ;
+this.studentExamMarks = studentExamMarks;
+this.studentLabPerformance = studentLabPerformance;
+this.studentDailyTask = studentDailyTask;
+
+}
+public double overallPercentage(){
+double per = (studentAttendence+studentExamMarks+studentLabPerformance+studentDailyTask)/4;
+return per;
+}
+public String grade(){
+if(overallPercentage() >= 90){
+return "A+";
+}
+else if(overallPercentage() >=80 && overallPercentage() < 90){
+return "A";
+}
+else if(overallPercentage() >=70 && overallPercentage() < 80){
+return "B";
+}
+else if(overallPercentage() >=60 && overallPercentage() < 70){
+return "C";
+}
+else{
+return "fail";
+}
+}
+public String eligible(){
+if(overallPercentage() >= 60){
+return "Eligible";
+}
+else{
+return "Not Eligible";
+}
+}
+public String toString(){
+return " Student Name: "+studentName+
+ "\n Attendance: "+studentAttendence+
+ "\n Exam Marks: "+studentExamMarks+
+ "\n Lab Performance: "+studentLabPerformance+
+ "\n Daily Task: "+studentDailyTask+
+ "\n Overall Percentage: "+overallPercentage()+ 
+ "\n Grade: "+grade()+ 
+ "\n Promotion Eligibility: "+eligible();
+}
+}
+
+//OUTPUT :
+C:\Users\hp\OneDrive\Desktop\all codes\java\NotePadJavaCode>javac Student.java
+
+C:\Users\hp\OneDrive\Desktop\all codes\java\NotePadJavaCode>java Student
+enter student details
+enter student name
+tharun
+enter student Attendance
+85
+enter student Exam Marks
+75
+enter student Lab Performance
+85
+enter student Daily Task
+75
+ Student Name: tharun
+ Attendance: 85.0
+ Exam Marks: 75.0
+ Lab Performance: 85.0
+ Daily Task: 75.0
+ Overall Percentage: 80.0
+ Grade: A
+ Promotion Eligibility: Eligible
+======================================================================================================================
 ===================================================================================================================
 ===================================================================================================================
 
