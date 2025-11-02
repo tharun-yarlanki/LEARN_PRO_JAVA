@@ -5,7 +5,7 @@ public class Bank {
     private int accountNumber;
     private double currentBalance;
 
-    public static String bankName = "ICICI Bank";
+    public static String bankName = "ICICI Bank"; 
     public static String bankAddress = "Ameerpet";
     public static String bankIFSCCode = "ICICI006";
 
