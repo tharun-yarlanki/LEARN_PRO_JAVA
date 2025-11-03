@@ -7,7 +7,7 @@ public class Bank {
 
     public static String bankName = "ICICI Bank"; 
     public static String bankAddress = "Ameerpet"; 
-    public static String bankIFSCCode = "ICICI006";
+    public static String bankIFSCCode = "ICICI006"; 
  
     // Set customer details
     public void setCustomerDetails(String name, int accNumber, double balance) {
