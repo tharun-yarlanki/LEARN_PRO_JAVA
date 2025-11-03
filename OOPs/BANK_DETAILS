@@ -2,7 +2,7 @@ package BLC;
 
 public class Bank {
     private String customerName;
-    private int accountNumber;
+    private int accountNumber; 
     private double currentBalance; 
 
     public static String bankName = "ICICI Bank"; 
