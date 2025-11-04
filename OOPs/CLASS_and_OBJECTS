@@ -7,7 +7,7 @@ public class GetDogInfo {
 	int age ;
 	 
 	public  void getDogInformation() {
-		System.out.println("Dog name :"+name);
+		System.out.println("Dog name :"+name); 
 		System.out.println("Dog height :"+height);
 		System.out.println("Dog age :"+age);
 
