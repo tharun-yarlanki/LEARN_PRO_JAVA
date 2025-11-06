@@ -5,7 +5,7 @@ public class GetDogInfo {
 	String name ; 
 	double height ;
 	int age ; 
-	 
+	  
 	public  void getDogInformation() {
 		System.out.println("Dog name :"+name); 
 		System.out.println("Dog height :"+height);
