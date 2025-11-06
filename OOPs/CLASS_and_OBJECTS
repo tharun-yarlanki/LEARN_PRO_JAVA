@@ -2,7 +2,7 @@
 1) package DogDetails;
 
 public class GetDogInfo {
-	String name ;
+	String name ; 
 	double height ;
 	int age ; 
 	 
