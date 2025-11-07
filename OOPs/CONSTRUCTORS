@@ -9,7 +9,7 @@ public class Car {
 	 this.model = model; 
 //  this.year = year;    
 //	 this.price = price;     
-	 
+	  
 	 if(year<2010) { 
 		 System.err.println("year must be greater than 2010");
 	 }
