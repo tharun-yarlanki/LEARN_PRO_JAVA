@@ -20,7 +20,7 @@ public class Car {
 		 System.err.println("Price must be positive integer");
 	 }
 	 else {
-		 this.price = price;
+		 this.price = price; 
 	 }
 	 
 	 if(price<0 || year<2010) {
