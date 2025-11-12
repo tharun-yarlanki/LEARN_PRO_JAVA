@@ -1,7 +1,7 @@
 package BLC;
 
 public class Bank {
-    private String customerName;
+    private String customerName; 
     private int accountNumber; 
     private double currentBalance; 
 
